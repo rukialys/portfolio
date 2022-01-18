@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url(img/background.png);
+    background-image: url(assets/img/background.png);
     background-size: cover;
     background-position: left;
     background-attachment: fixed;
@@ -20,16 +20,15 @@ body {
 @media screen and (min-width:451px) and (max-width:994px) {
 
     body {
-        background-image: url(img/background-telephone.png);
-        background-size: cover;
-        background-position: left;
+        background-image: url(assets/img/background-telephone.png);
     }
 }
 
 @media screen and (max-width:450px) {
 
     body {
-        background-image: url(img/background-telephone.png);
+        background-image: url(assets/img/background-telephone.png);
+        background-position: center;
     }
     
 }

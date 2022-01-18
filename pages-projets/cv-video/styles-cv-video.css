@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url(../img/fond-nuages.png);
+    background-image: url(../../assets/img/fond-nuages.png);
     background-size: cover;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -21,8 +21,7 @@ h1{
     font-weight: bold;
     margin-top: 2%;
 }
-
-.affiches{
+.cv-video{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,11 +31,6 @@ h1{
     width: 50%;
     background-color: white;
     padding: 20px;
-    border: solid 1px black;
-}
-
-.imgaffiche{
-    width: 25vw;
     border: solid 1px black;
 }
 
@@ -58,36 +52,37 @@ h1{
     width: 9%;
 }
 
-a{
-    color: black;
-    text-decoration: none;
-}
-
-a:hover{
-    color: black;
-}
-
-.textes a{
-    border: solid 1px black;
-    padding: 10px;
-} 
-
 @media screen and (min-width:451px) and (max-width:994px) {
-    .affiches{
+    .cv-video{
         display: block;
     }
-
+    
     .textes{
         width: 90%;
         margin: auto;
         margin-bottom: 3%;
+    }
+
+    .video{
+        margin: auto;
+        position: relative;
+        width: 90%;
+        padding-bottom: 56.25%;
+    }
+
+    .video iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
 }
 
 @media screen and (max-width:450px) {
 
-    .affiches{
+    .cv-video{
         display: block;
     }
     
@@ -97,11 +92,21 @@ a:hover{
         margin-bottom: 3%;
     }
 
-    .imgaffiche{
-        width: 60vw;
-        border: solid 1px black;
+    .video{
+        margin: auto;
+        position: relative;
+        width: 90%;
+        padding-bottom: 56.25%;
     }
-    
+
+    .video iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .information{
         grid-template-columns: repeat(1,1fr);
         gap: 10px;

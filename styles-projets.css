@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url(img/fond-nuages.png);
+    background-image: url(assets/img/fond-nuages.png);
     background-size: cover;
     font-family: 'Noto Sans', sans-serif;
 }

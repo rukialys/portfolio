@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url(../img/fond-nuages.png);
+    background-image: url(../../assets/img/fond-nuages.png);
     background-size: cover;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -22,7 +22,7 @@ h1{
     margin-top: 2%;
 }
 
-.logo{
+.gif{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,14 +35,14 @@ h1{
     border: solid 1px black;
 }
 
-.image{
+.image-gif{
     width: 50%;
 }
-.image-logo{
-    width: 37vw;
+
+.img-gif{
+    width: 30vw;
     margin: auto;
     display: block;
-    border: solid 1px black;
 }
 
 .information{
@@ -64,35 +64,28 @@ h1{
 }
 
 @media screen and (min-width:451px) and (max-width:994px) {
-    .logo{
-        display: block;
-    }
-    
-    .textes{
-        width: 90%;
-        margin: auto;
-        margin-bottom: 3%;
-    }
 
-    .image-logo{
-        width: 80vw;
+    .img-gif{
+        width: 35vw;
     }
 }
 
 @media screen and (max-width:450px) {
-
-    .logo{
+    .gif{
         display: block;
+        
     }
-    
+    .image-gif{
+        margin: auto;
+    }
+    .img-gif{
+    width: 50vw;
+    }
+
     .textes{
         width: 90%;
         margin: auto;
         margin-bottom: 3%;
-    }
-
-    .image-logo{
-        width: 80vw;
     }
 
     .information{
@@ -103,5 +96,4 @@ h1{
     .icons{
         width: 9%;
     }
-    
 }

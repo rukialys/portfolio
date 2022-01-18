@@ -70,12 +70,18 @@ main{
 @media screen and (max-width:450px) {  
     .texte{
         width: 100%;
-    } 
+    }
+
+    .presentation {
+        display: block;
+    }
     .imgpresentation{
-        display: none;
+        width: 80vw;
+        height: 35vh;
     }
     .imgillustration{
-        display: none;
+        width: 80vw;
+        height: 35vh;
     }
 
 }
