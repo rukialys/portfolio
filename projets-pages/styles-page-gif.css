@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/fond-nuages.png);
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.gif{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textes{
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.image-gif{
+    width: 50%;
+}
+
+.img-gif{
+    width: 30vw;
+    margin: auto;
+    display: block;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.information div{
+    background-color: white;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.icons{
+    width: 9%;
+}
+
+@media screen and (min-width:451px) and (max-width:994px) {
+
+    .img-gif{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .gif{
+        display: block;
+        
+    }
+    .image-gif{
+        margin: auto;
+    }
+    .img-gif{
+    width: 50vw;
+    }
+
+    .textes{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+
+    .information{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    
+    .icons{
+        width: 9%;
+    }
+}

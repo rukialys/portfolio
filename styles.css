@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.presentation {
+    height: 50px;
+}
+
+@media screen and (min-width:451px) and (max-width:994px) {
+
+    body {
+        background-image: url(img/background-telephone.png);
+        background-size: cover;
+        background-position: left;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    body {
+        background-image: url(img/background-telephone.png);
+    }
+    
+}

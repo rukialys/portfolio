@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/fond-nuages.png);
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.templates{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textes{
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.information div{
+    background-color: white;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.icons{
+    width: 9%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+.textes a{
+    border: solid 1px black;
+    padding: 10px;
+} 
+
+@media screen and (min-width:451px) and (max-width:994px) {
+    .templates{
+        display: block;
+    }
+    
+    .textes{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    .templates{
+        display: block;
+    }
+    
+    .textes{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    .figma{
+        margin: auto;
+        position: relative;
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    .figma iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .information{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    
+    .icons{
+        width: 9%;
+    }
+    
+}

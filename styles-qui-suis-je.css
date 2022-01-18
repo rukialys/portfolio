@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+.titre{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 2% 0 2% 5%;
+}
+
+.titre2{
+    font-size: 2rem;
+    margin: 5%;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texte{
+    width: 45%;
+}
+
+.imgpresentation{
+    width: 33vw;
+    height: 49vh;
+}
+
+.imgillustration{
+    width: 30vw;
+    border: solid 1px black;
+}
+
+
+@media screen and (min-width:451px) and (max-width:994px) {
+    .texte{
+        width: 70%;
+        margin-right: 2%;
+    }
+
+    .texte-tablette{
+        width: 70%;
+        margin-left: 2%;
+    }
+
+    .imgpresentation{
+        width: 38vw;
+        height: 25vh;
+    }
+    
+    .imgillustration{
+        width: 35vw;
+        border: solid 1px black;
+    }
+}
+
+@media screen and (max-width:450px) {  
+    .texte{
+        width: 100%;
+    } 
+    .imgpresentation{
+        display: none;
+    }
+    .imgillustration{
+        display: none;
+    }
+
+}
